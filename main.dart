@@ -4,28 +4,27 @@ import 'screens/home_screen.dart';
 import 'screens/product_detail_screen.dart';
 import 'screens/cart_screen.dart';
 import 'screens/checkout_screen.dart';
-import 'screens/order_confirmation_screen.dart';
+import 'screens/order_confirmed_screen.dart';
 
-void main() => runApp(MWLStoreApp());
+void main() {
+  runApp(MwlStoreApp());
+}
 
-class MWLStoreApp extends StatelessWidget {
+class MwlStoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MWL Store',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-        fontFamily: 'Montserrat',
-      ),
+      theme: ThemeData(primarySwatch: Colors.teal),
       initialRoute: '/',
       routes: {
-        '/': (ctx) => SplashScreen(),
-        '/home': (ctx) => HomeScreen(),
-        '/product-detail': (ctx) => ProductDetailScreen(),
-        '/cart': (ctx) => CartScreen(),
-        '/checkout': (ctx) => CheckoutScreen(),
-        '/order-confirmation': (ctx) => OrderConfirmationScreen(),
+        '/': (context) => SplashScreen(),
+        '/home': (context) => HomeScreen(),
+        '/product': (context) => ProductDetailScreen(),
+        '/cart': (context) => CartScreen(),
+        '/checkout': (context) => CheckoutScreen(),
+        '/confirmed': (context) => OrderConfirmationScreen(),
       },
     );
   }

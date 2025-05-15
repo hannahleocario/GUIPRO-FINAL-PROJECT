@@ -10,9 +10,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
-      Navigator.of(context).pushReplacementNamed('/home');
-    });
+    Timer(Duration(seconds: 2), () => Navigator.pushReplacementNamed(context, '/home'));
   }
 
   @override
@@ -22,11 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Text(
           'MWL Store',
-          style: TextStyle(
-            fontSize: 36,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
     );
