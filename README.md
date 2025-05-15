@@ -2,16 +2,16 @@ MWL Store - E-commerce UI Project
 Student Name & ID:
 
 Lj Malinao [2023-2110278]
-Frederico Warde [2023-2110278]
+Frederico Warde [2021-2297740]
 Hannah Leocario [2023-2110278]
 Dumaguete Campus
 Final Project - 2nd Semester A.Y. 2024 - 2025
 College of Computer Studies and Engineering
 Graphical User Interface Programming (GUIPRO)
-________________________________________
+
 PROJECT DESCRIPTION
 MWL Store is a modern e-commerce mobile application UI built using Flutter. This project features a sleek and user-friendly interface for browsing and purchasing products. The store specializes in fashion and lifestyle items such as bags, shoes, clothes, pots, shorts, and pants. The overall theme focuses on simplicity, modern design aesthetics, and ease of navigation, providing a seamless shopping experience.
-________________________________________
+
  Implemented Features
  Screens
 Screen Name	Purpose	Key UI Elements
@@ -32,7 +32,7 @@ Additional UI Features
 
 ●	Custom Widgets: Reusable ProductCard and CategoryFilter components.
 
-________________________________________
+
 Unique Design Choices & Creativity
  Niche & Concept
 The store targets young adults and casual shoppers looking for affordable yet stylish fashion and lifestyle products. The product mix is designed to appeal to modern minimalists.
@@ -55,6 +55,29 @@ Screenshots (Add these manually in actual README)
 ●	Home Screen (Product Grid)
 
 ●	Product Detail Screen
+
+●	Cart Screen
+
+●	Checkout Form
+
+●	Order Confirmation
+
+
+Challenges Faced & Solutions
+1. State Management for Cart Functionality
+●	Challenge: Managing cart items and ensuring real-time updates across screens.
+
+●	Solution: Implemented a simple singleton-like CartManager class to hold and manage cart data. Used setState to trigger UI updates.
+
+2. Passing Data Between Screens
+●	Challenge: Efficiently passing product data to the Product Detail screen.
+
+●	Solution: Used Flutter's Navigator.pushNamed with arguments to pass product objects cleanly to detail pages.
+
+
+ Conclusion
+The MWL Store UI Project successfully demonstrates a fully functional e-commerce front-end interface using Flutter, focusing on clean UI/UX design principles, modular components, and efficient navigation flow.
+
 
 ●	Cart Screen
 
